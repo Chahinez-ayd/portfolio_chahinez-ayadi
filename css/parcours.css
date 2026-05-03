@@ -1,0 +1,82 @@
+.parcours-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.parcours-card {
+    background: linear-gradient(145deg, rgba(30, 32, 46, 0.95), rgba(16, 17, 26, 0.95));
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 2.5rem;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.parcours-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    pointer-events: none;
+}
+
+.parcours-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+}
+
+.parcours-badge {
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    border-radius: 999px;
+    background: rgba(99, 102, 241, 0.15);
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.parcours-subtitle {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.parcours-list {
+    list-style: none;
+    color: var(--text-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 1.2rem;
+}
+
+.parcours-list li {
+    position: relative;
+}
+
+.parcours-list li::before {
+    content: '•';
+    position: absolute;
+    left: -1.2rem;
+    color: var(--primary-color);
+}
+
+.parcours-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.parcours-tag {
+    padding: 0.35rem 1rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
+}
+

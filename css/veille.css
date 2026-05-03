@@ -1,0 +1,223 @@
+:root {
+    --veille-bg-primary: #0f0f0f;
+    --veille-bg-secondary: rgba(29, 29, 31, 0.85);
+    --veille-text-primary: #ffffff;
+    --veille-text-secondary: #a0a0a0;
+    --veille-accent: #a29bfe;
+    --veille-accent-strong: #6c5ce7;
+    --veille-gradient: linear-gradient(135deg, #6c5ce7, #a29bfe);
+    --veille-radius: 18px;
+    --veille-border: rgba(255, 255, 255, 0.08);
+}
+
+.veille-page {
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+}
+
+.veille-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgba(7, 7, 10, 0.35);
+    border-radius: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.65);
+}
+
+.veille-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.veille-title {
+    font-size: clamp(2.2rem, 4vw, 3.1rem);
+    background: var(--veille-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+}
+
+.veille-description {
+    color: var(--veille-text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.methodology-section,
+.google-alerts-demo,
+.presentation-section,
+.analysis-section {
+    background: var(--veille-bg-secondary);
+    border-radius: var(--veille-radius);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--veille-border);
+}
+
+.methodology-title,
+.section-title,
+.analysis-title {
+    font-size: 1.6rem;
+    color: var(--veille-text-primary);
+    margin-bottom: 1rem;
+}
+
+.methodology-content {
+    color: var(--veille-text-secondary);
+    line-height: 1.6;
+}
+
+.methodology-content ul {
+    margin: 1rem 0;
+    padding-left: 1.25rem;
+}
+
+.keywords-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1rem;
+}
+
+.keyword {
+    background: var(--veille-bg-primary);
+    color: var(--veille-accent);
+    padding: 0.45rem 1.1rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+}
+
+.tools-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.screenshot-container {
+    border-radius: var(--veille-radius);
+    overflow: hidden;
+    border: 1px solid var(--veille-border);
+    background: var(--veille-bg-primary);
+}
+
+.google-alerts-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.screenshot-caption {
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--veille-text-secondary);
+    font-size: 0.9rem;
+}
+
+.presentation-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.presentation-container {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    background: var(--veille-bg-primary);
+    border-radius: var(--veille-radius);
+    padding: 1.5rem;
+    border: 1px solid var(--veille-border);
+}
+
+.presentation-icon {
+    font-size: 2.8rem;
+    color: var(--veille-accent);
+}
+
+.presentation-info h3 {
+    color: var(--veille-text-primary);
+    margin-bottom: 0.35rem;
+}
+
+.presentation-info p {
+    color: var(--veille-text-secondary);
+    margin-bottom: 1rem;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--veille-gradient);
+    color: #fff;
+    padding: 0.7rem 1.3rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+}
+
+.analysis-content {
+    color: var(--veille-text-secondary);
+}
+
+.veille-intro {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.veille-intro i {
+    font-size: 2rem;
+    color: var(--veille-accent);
+}
+
+.veille-points {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.point {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: var(--veille-radius);
+    padding: 1.25rem;
+    border: 1px solid var(--veille-border);
+}
+
+.point i {
+    font-size: 1.4rem;
+    color: var(--veille-accent);
+    margin-bottom: 0.75rem;
+}
+
+.point h3 {
+    color: var(--veille-text-primary);
+    margin-bottom: 0.35rem;
+}
+
+.point p {
+    color: var(--veille-text-secondary);
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .veille-container {
+        padding: 1.5rem;
+    }
+
+    .presentation-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
